@@ -93,3 +93,12 @@ void deleteNode()
         cout << "List is emty" << endl;
         return;
     }
+
+    current = START;
+    previous = NULL;
+
+    while (current != NULL && current->noMhs != rollNo)
+    {
+        previous = current;
+        current = current->next;
+    }
